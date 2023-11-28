@@ -38,4 +38,33 @@ nav {
   transition: background-color, color, box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vw;
+  left: 50vw;
+  animation: animationBall 2s linear infinite alternate;
+}
+
+@keyframes animationBall {
+  from {
+    top: 0;
+  }
+  to {
+    top: calc(100vh - 150px);
+  }
 }/*# sourceMappingURL=style.css.map */
