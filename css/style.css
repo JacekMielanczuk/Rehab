@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  width: 200px;
+  height: 45px;
+  font-size: 24px;
+  margin: 0 25px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  background-color: transparent;
+  color: aliceblue;
+  cursor: pointer;
+  transition: background-color, color;
+}
+
+.btn:hover {
+  border-color: black;
+  background-color: aliceblue;
+  color: black;
+  transition: background-color, color, box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}/*# sourceMappingURL=style.css.map */
