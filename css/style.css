@@ -50,8 +50,8 @@ section {
 .ball {
   position: absolute;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 20px;
+  height: 20px;
   background-color: yellow;
   border-radius: 50%;
   position: absolute;
@@ -65,6 +65,6 @@ section {
     top: 0;
   }
   to {
-    top: calc(100vh - 150px);
+    top: calc(100vh - 20px);
   }
 }/*# sourceMappingURL=style.css.map */
