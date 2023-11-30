@@ -19,3 +19,20 @@
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.back {
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: aliceblue;
+}
+.back:hover {
+  border-color: black;
+  background-color: aliceblue;
+  color: black;
+  transition: background-color, color, box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
