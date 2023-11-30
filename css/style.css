@@ -82,14 +82,35 @@ section {
   position: absolute;
   top: 50vw;
   left: 50vw;
-  animation: animationBall 2s linear infinite alternate;
+  animation: animationVertical 2s linear infinite alternate;
 }
 
-@keyframes animationBall {
+.ball_two {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+  animation: animationHorizontal 4s linear infinite alternate;
+}
+
+@keyframes animationVertical {
   from {
     top: 0;
   }
   to {
     top: calc(100vh - 20px);
+  }
+}
+@keyframes animationHorizontal {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100vw - 20px);
   }
 }/*# sourceMappingURL=style.css.map */
