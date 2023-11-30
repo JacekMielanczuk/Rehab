@@ -31,6 +31,19 @@ section {
   animation: animationHorizontal 4s linear infinite alternate;
 }
 
+.ball_three {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  overflow: hidden;
+}
+// ukrycie pasków przewijania
+::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes animationVertical {
   from {
     top: 0;
