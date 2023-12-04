@@ -5,9 +5,11 @@
 }
 
 body {
+  position: relative;
   background-color: #4d4855;
   background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
 }
 
 .return {
@@ -125,5 +127,43 @@ section {
   }
   to {
     left: calc(100vw - 20px);
+  }
+}
+.stripe-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.stripe {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to right, white, white 10%, black 10%, black 20%);
+  white-space: wrap;
+  animation: slide 8s 4s linear infinite;
+}
+
+.stripe-two {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to right, white, white 10%, black 10%, black 20%);
+  white-space: wrap;
+  animation: slide-two 8s linear infinite;
+}
+
+@keyframes slide {
+  to {
+    left: 100%;
+  }
+}
+@keyframes slide-two {
+  to {
+    left: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
