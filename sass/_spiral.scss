@@ -1,0 +1,53 @@
+.spiral-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// .spiral {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 830px;
+//   height: 830px;
+//   background: conic-gradient(
+//     white 0deg 90deg,
+//     transparent 0deg 180deg,
+//     white 0deg 270deg,
+//     transparent 0deg 360deg
+//   );
+//   border-radius: 50%;
+//   animation: spin 6s linear infinite;
+// }
+
+// @keyframes spin {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+.spiral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 830px;
+  height: 830px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    #0000,
+    #fff 1deg 18deg,
+    #0000 20deg 36deg
+  );
+  animation: spin 4s infinite linear;
+}
+.spiral::before {
+  content: "";
+
+  border-radius: 50%;
+  inset: 0;
+  background: inherit;
+  animation: inherit;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}

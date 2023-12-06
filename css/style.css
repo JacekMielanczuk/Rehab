@@ -166,4 +166,34 @@ section {
   to {
     left: 100%;
   }
+}
+.spiral-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spiral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 830px;
+  height: 830px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(rgba(0, 0, 0, 0), #fff 1deg 18deg, rgba(0, 0, 0, 0) 20deg 36deg);
+  animation: spin 4s infinite linear;
+}
+
+.spiral::before {
+  content: "";
+  border-radius: 50%;
+  inset: 0;
+  background: inherit;
+  animation: inherit;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(0.5turn);
+  }
 }/*# sourceMappingURL=style.css.map */
