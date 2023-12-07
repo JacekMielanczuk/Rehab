@@ -196,4 +196,15 @@ section {
   100% {
     transform: rotate(0.5turn);
   }
+}
+.words-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
