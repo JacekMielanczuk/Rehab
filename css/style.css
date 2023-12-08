@@ -155,7 +155,7 @@ section {
   height: 100%;
   background: repeating-linear-gradient(to right, white, white 10%, black 10%, black 20%);
   white-space: wrap;
-  animation: slide 12s 6s linear infinite;
+  animation: slide 10s 5s linear infinite;
 }
 
 .stripe-two {
@@ -166,7 +166,7 @@ section {
   height: 100%;
   background: repeating-linear-gradient(to right, white, white 10%, black 10%, black 20%);
   white-space: wrap;
-  animation: slide-two 12s linear infinite;
+  animation: slide-two 10s linear infinite;
 }
 
 @keyframes slide {

@@ -18,7 +18,7 @@
     black 20%
   );
   white-space: wrap;
-  animation: slide 12s 6s linear infinite;
+  animation: slide 10s 5s linear infinite;
 }
 .stripe-two {
   position: absolute;
@@ -34,7 +34,7 @@
     black 20%
   );
   white-space: wrap;
-  animation: slide-two 12s linear infinite;
+  animation: slide-two 10s linear infinite;
 }
 
 @keyframes slide {
