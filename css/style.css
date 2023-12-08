@@ -19,10 +19,22 @@ body {
 }
 
 nav {
-  height: 100vh;
+  height: 45vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
+}
+
+.toggle {
+  display: block;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -207,4 +219,5 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
